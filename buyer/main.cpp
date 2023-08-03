@@ -6,6 +6,7 @@
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    Buyer("Ivanov", "Ivan", "Ivanovic", "Pushkina 1 kv 1", 1212, 2121);
+
     return 0;
 }
