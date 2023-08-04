@@ -2,6 +2,7 @@
 #define BUYER_H
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -33,5 +34,14 @@ public:
     void out();
 };
 
+class Buyers
+{
+    vector <Buyer> _buyers;
+public:
+    Buyers(vector<Buyer> &vec);
 
+    void sortBuyers();
+    void selectedOut();
+
+};
 #endif // BUYER_H

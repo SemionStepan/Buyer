@@ -8,5 +8,6 @@ int main()
 {
     Buyer("Ivanov", "Ivan", "Ivanovic", "Pushkina 1 kv 1", 1212, 2121);
 
+
     return 0;
 }

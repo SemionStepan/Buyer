@@ -19,3 +19,12 @@ void Buyer::out()
     cout << _creditCardNumber << endl;
     cout << _bankAccountNumber << endl;
 }
+
+void Buyers::sortBuyers()
+{
+    bool flag = true;
+    while(flag)
+    {
+
+    }
+}
