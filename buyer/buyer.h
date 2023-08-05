@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -41,6 +42,7 @@ public:
     Buyers(vector<Buyer> &vec);
 
     void sortBuyers();
+    void out();
     void selectedOut();
 
 };

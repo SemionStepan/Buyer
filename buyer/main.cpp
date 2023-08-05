@@ -6,8 +6,15 @@
 
 int main()
 {
-    Buyer("Ivanov", "Ivan", "Ivanovic", "Pushkina 1 kv 1", 1212, 2121);
+    vector <Buyer> vec
+    {
+        Buyer("Ivanov", "Ivan", "Ivanovic", "Pushkina 1 kv 1", 1212, 2121),
+        Buyer("Alexeev", "Alex", "Alexeevic", "Pushkina 1 kv 1", 1212, 2121),
+        Buyer("Vladimirov", "Vladimir", "Vladimirovic", "Pushkina 1 kv 1", 1212, 2121)
+    };
 
-
+    Buyers buyers(vec);
+    buyers.sortBuyers();
+    buyers.out();
     return 0;
 }

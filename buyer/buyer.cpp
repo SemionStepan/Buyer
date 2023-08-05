@@ -1,5 +1,6 @@
 #include "buyer.h"
 
+
 Buyer::Buyer(string lastName, string firstName, string fatherName, string address, double creditCardNumber, double bankAccountNumber)
 {
     _lastName = lastName;
@@ -20,11 +21,23 @@ void Buyer::out()
     cout << _bankAccountNumber << endl;
 }
 
+Buyers::Buyers(vector<Buyer> &vec) : _buyers(vec)
+{}
+
 void Buyers::sortBuyers()
 {
-    bool flag = true;
-    while(flag)
+    sort(_buyers.begin(), _buyers.end(),
+    [](Buyer &a, Buyer &b)
     {
+        return a.getLastName() > b.getLastName();
+    }
+         );
+}
 
+void Buyers::out()
+{
+    for(auto &buyer : _buyers)
+    {
+        buyer.out();
     }
 }
