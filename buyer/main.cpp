@@ -9,12 +9,16 @@ int main()
     vector <Buyer> vec
     {
         Buyer("Ivanov", "Ivan", "Ivanovic", "Pushkina 1 kv 1", 1212, 2121),
-        Buyer("Alexeev", "Alex", "Alexeevic", "Pushkina 1 kv 1", 1212, 2121),
-        Buyer("Vladimirov", "Vladimir", "Vladimirovic", "Pushkina 1 kv 1", 1212, 2121)
+        Buyer("Bvanov", "Ivan", "Ivanovic", "Pushkina 1 kv 1", 1212, 2121),
+        Buyer("Alexee", "Alex", "Alexeevic", "Pushkina 1 kv 1", 1212, 2121),
+        Buyer("Vladim", "Vladimir", "Vladimirovic", "Pushkina 1 kv 1", 1212, 2121),
+        Buyer("Cvanov", "Ivan", "Ivanovic", "Pushkina 1 kv 1", 1212, 2121)
     };
 
     Buyers buyers(vec);
+    cout << "Алфавитный порядок" << endl;
     buyers.sortBuyers();
     buyers.out();
+    buyers.selectedOut();
     return 0;
 }
